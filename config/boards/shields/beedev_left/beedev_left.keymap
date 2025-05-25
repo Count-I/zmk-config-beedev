@@ -6,18 +6,18 @@
         compatible = "zmk,keymap";
         default_layer {
             bindings = <
-                NO_OP               NO_OP       NO_OP   &kp AT   &kp LEFT_PARENTHESIS   NO_OP   NO_OP    
-                NO_OP               &kp TAB     &kp Q   &kp W    &kp E                  &kp R   &kp T    
+                                                        &kp AT   &kp LEFT_PARENTHESIS                  
+                                    &kp TAB     &kp Q   &kp W    &kp E                  &kp R   &kp T    
                 &lt admin_layer ESC &kp LSHIFT  &kp A   &kp S    &kp D                  &kp F   &kp G    
-                NO_OP               &kp LCTRL   &kp Z   &kp X    &kp C                  &kp V   &kp B    
+                                    &kp LCTRL   &kp Z   &kp X    &kp C                  &kp V   &kp B    
             >;
         };
         admin_layer {
             bindings = <
-                NO_OP   NO_OP           NO_OP           &sys_reset      &bootloader     NO_OP           NO_OP
-                NO_OP   &bt_select 0    &bt_select 1    &bt_select 2    &bt_select 3    &bt_select 4    NO_OP
-                NO_OP   &bt_pair        &bt_clear_bonds NO_OP           NO_OP           NO_OP           NO_OP
-                NO_OP   NO_OP           NO_OP           NO_OP           NO_OP           NO_OP           NO_OP
+                                                        &sys_reset      &bootloader                        
+                       &bt_select 0    &bt_select 1     &bt_select 2    &bt_select 3    &bt_select 4        
+                       &bt_pair        &bt_clear_bonds                                                  
+                                                                                                      
             >;
         };
     };
