@@ -20,4 +20,13 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: beedev
+    config:
+      overlay: overlays/beedev_left.overlay
+      keymap: keymap/beedev_left.keymap
+      prj_conf: prj_left.conf
+
+  - board: nice_nano_v2
+    config:
+      overlay: overlays/beedev_right.overlay
+      keymap: keymap/beedev_right.keymap
+      prj_conf: prj_right.conf
