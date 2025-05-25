@@ -8,7 +8,7 @@
             bindings = <
                                                         &kp AT   &kp LEFT_PARENTHESIS                  
                                     &kp TAB     &kp Q   &kp W    &kp E                  &kp R   &kp T    
-                &lt admin_layer ESC &kp LSHIFT  &kp A   &kp S    &kp D                  &kp F   &kp G    
+                &lt 1 ESC &kp LSHIFT  &kp A   &kp S    &kp D                  &kp F   &kp G    
                                     &kp LCTRL   &kp Z   &kp X    &kp C                  &kp V   &kp B    
             >;
         };
