@@ -16,5 +16,5 @@
                 &kp N   &kp M   &kp SEMI    &kp COLON               &kp V       &kp MINUS   NO_OP
             >;
         };
-    }
+    };
 }
