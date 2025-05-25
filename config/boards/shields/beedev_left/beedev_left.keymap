@@ -4,8 +4,9 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-    keymap {
+        keymap {
         compatible = "zmk,keymap";
+
         default_layer {
             bindings = <
                                                         &kp AT   &kp LEFT_PARENTHESIS                  
@@ -14,6 +15,7 @@
                                     &kp LCTRL   &kp Z   &kp X    &kp C                  &kp V   &kp B    
             >;
         };
+        
         admin_layer {
             bindings = <
                                                         &sys_reset      &bootloader                        
