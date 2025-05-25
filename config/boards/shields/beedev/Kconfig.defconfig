@@ -1,5 +1,5 @@
-if SHIELD_BEEDEV_LEFT
+if SHIELD_BEEDEV
 
-config beedev_left
-    default "beedev_left"
+config beedev
+    default "beedev"
 endif
