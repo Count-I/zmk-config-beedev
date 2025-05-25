@@ -1,2 +1,0 @@
-config SHIELD_BEEDEV_RIGHT
-    def_bool $(shields_list_contains, beedev_right)
