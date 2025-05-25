@@ -5,7 +5,17 @@
         zmk,kscan = &default_kscan;
         zmk,matrix_transform = &default_transform; 
     };
+    layouts {
+        compatible = "zmk,layout";
+        default_layout = <&beedev_right_split>;
 
+        beedev_right_split: beedev_right_split {
+            compatible = "zmk,layout";
+            keymap {
+                compatible = "zmk,keymap";
+            };
+        };
+    };
     split {
         compatible = "zmk,split";
         label = "right";
