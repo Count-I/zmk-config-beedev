@@ -1,5 +1,0 @@
-if SHIELD_BEEDEV
-
-config beedev
-    default "beedev"
-endif
