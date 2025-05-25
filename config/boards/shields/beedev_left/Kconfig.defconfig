@@ -1,0 +1,5 @@
+if SHIELD_BEEDEV_LEFT
+
+config beedev_left
+    default "beedev_left"
+endif
