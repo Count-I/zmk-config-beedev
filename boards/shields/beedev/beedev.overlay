@@ -1,0 +1,19 @@
+/ {
+    matrix {
+        compatible = "zmk,matrix";
+        diode-direction = "col2row";
+
+        row-gpios = <&nice_nano_v2 31 (GPIO_PULL_DOWN)>,
+                    <&nice_nano_v2 29 (GPIO_PULL_DOWN)>,
+                    <&nice_nano_v2 2 (GPIO_PULL_DOWN)>,
+                    <&nice_nano_v2 10 (GPIO_PULL_DOWN)>;
+
+        col-gpios = <&nice_nano_v2 6 (GPIO_ACTIVE_HIGH)>,
+                    <&nice_nano_v2 8 (GPIO_ACTIVE_HIGH)>,
+                    <&nice_nano_v2 17 (GPIO_ACTIVE_HIGH)>,
+                    <&nice_nano_v2 20 (GPIO_ACTIVE_HIGH)>,
+                    <&nice_nano_v2 22 (GPIO_ACTIVE_HIGH)>,
+                    <&nice_nano_v2 24 (GPIO_ACTIVE_HIGH)>,
+                    <&nice_nano_v2 11 (GPIO_ACTIVE_HIGH)>;
+    };
+};
