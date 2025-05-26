@@ -19,9 +19,9 @@
 //        | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-                &kp TAB   &kp Q &kp W &kp E &kp R &kp T 
-&kp ESC         &kp LCTRL &kp A &kp S &kp D &kp F &kp G 
-                &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   
+        &kp TAB   &kp Q &kp W &kp E &kp R &kp T 
+&kp ESC &kp LCTRL &kp A &kp S &kp D &kp F &kp G 
+        &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   
                         >;
                 };
         };
