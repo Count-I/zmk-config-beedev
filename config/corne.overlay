@@ -2,12 +2,33 @@
 
 / {
     chosen {
-        zmk,kscan = &kscan0;
-        zmk,matrix-transform = &default_transform;
+        zmk,kscan = &default_kscan;
+        zmk,matrix_transform = &default_transform; 
+    };
+    layouts {
+        compatible = "zmk,layout";
+        default_layout = <&beedev_left_split>;
+
+        beedev_left_split: beedev_left_split {
+            compatible = "zmk,layout";
+            keymap {
+                compatible = "zmk,keymap";
+            };
+        };
+    };
+    split {
+        compatible = "zmk,split";
+        label = "left";
     };
 
-    kscan0: kscan {
+    bluetooth {
+        compatible = "zmk,bluetooth";
+        label = "left";
+    };
+
+    default_kscan: kscan {
         compatible = "zmk,kscan-gpio-matrix";
+        label = "default_kscan";
         diode-direction = "col2row";
 
         row-gpios = <&nice_nano_v2 31 (GPIO_PULL_DOWN)>,
@@ -25,7 +46,7 @@
     };
 
     default_transform: matrix_transform{
-        compatible = "zmk,matrix-transform|";
+        compatible = "zmk,matrix-transform";
         rows = <4>;
         columns = <7>;
 
