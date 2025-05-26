@@ -1,5 +1,5 @@
 if SHIELD_BEEDEV
-
-config beedev_left
+            
+config ZMK_KEYBOARD_NAME
     default "beedev"
 endif
