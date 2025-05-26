@@ -1,6 +1,13 @@
+#include <dt-bindings/zmk/matrix_transform.h>
+
 / {
-    matrix {
-        compatible = "zmk,matrix";
+    chosen {
+        zmk,kscan = &kscan0;
+        zmk,matrix-transform = &default_transform;
+    };
+
+    kscan0: kscan {
+        compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
 
         row-gpios = <&nice_nano_v2 31 (GPIO_PULL_DOWN)>,
@@ -15,5 +22,18 @@
                     <&nice_nano_v2 22 (GPIO_ACTIVE_HIGH)>,
                     <&nice_nano_v2 24 (GPIO_ACTIVE_HIGH)>,
                     <&nice_nano_v2 11 (GPIO_ACTIVE_HIGH)>;
+    };
+
+    default_transform: matrix_transform{
+        compatible = "zmk,matrix-transform|";
+        rows = <4>;
+        columns = <7>;
+
+        map = <
+            NO_NODE NO_NODE NO_NODE RC(0,3) RC(0,4) NO_NODE NO_NODE 
+            NO_NODE RC(1,1) RC(1,2) RC(1,3) RC(1,4) RC(1,5) RC(1,6)
+            RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5) RC(2,6)
+            NO_NODE RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(3,6) 
+        >;
     };
 };
