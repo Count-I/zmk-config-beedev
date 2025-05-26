@@ -2,8 +2,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <behaviors.dtsi>
 
-#define RPAR = RAISE ;
-
 / {
     keymap{
         compatible = "zmk,keymap";
@@ -16,5 +14,5 @@
                 &kp N   &kp M   &kp SEMI    &kp COLON               &kp V       &kp MINUS        
             >;
         };
-    }
-}
+    };
+};

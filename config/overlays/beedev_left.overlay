@@ -27,7 +27,7 @@
     };
 
     default_kscan: kscan {
-        compatible = "zmk, kscan-gpio-matrix";
+        compatible = "zmk,kscan-gpio-matrix";
         label = "default_kscan";
         diode-direction = "col2row";
 
@@ -57,4 +57,4 @@
             NO_NODE RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(3,6) 
         >;
     };
-}
+};
