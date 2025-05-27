@@ -16,9 +16,18 @@
                         bindings = <
                                                         &kp AT  &kp LPAR                                    &kp EXCL &kp RPAR
                                    &kp TAB      &kp Q   &kp W   &kp E   &kp R   &kp T       &kp Y   &kp U   &kp I    &kp O     &kp P    &kp RETURN2 
-                        &kp ESC    &kp LCTRL    &kp A   &kp S   &kp D   &kp F   &kp G       &kp H   &kp J   &kp K    &kp L     &kp LBRC &kp RBRC    &kp RETURN 
-                                   &kp LSHFT    &kp Z   &kp X   &kp C   &kp V   &kp B       &kp N   &kp M   &kp SEMI &kp COLON &kp LT   &kp GT   
+                &lt bt_ctrl ESC    &kp LSHFT    &kp A   &kp S   &kp D   &kp F   &kp G       &kp H   &kp J   &kp K    &kp L     &kp LBRC &kp RBRC    &kp RETURN 
+                                   &kp LCTRL    &kp Z   &kp X   &kp C   &kp V   &kp B       &kp N   &kp M   &kp SEMI &kp COLON &kp LT   &kp GT   
                         >;
                 };
+
+                bt_ctrl {
+                        bindings = <
+                                                           &none        &none                                                  &none  &none
+                                &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none         &none   &none  &none  &none  &none  &none
+                        &none   &bt BT_CLR    &bt BT_NXT   &bt BT_PRV   &none        &none        &none         &none   &none  &none  &none  &none  &none  &none
+                                &none         &none        &none        &none        &none        &none         &none   &none  &none  &none  &none  &none    
+                        >;
+                        };
         };
 };
