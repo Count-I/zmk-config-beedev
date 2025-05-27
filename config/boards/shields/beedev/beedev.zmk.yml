@@ -3,7 +3,7 @@ id: beedev
 name: beedev
 type: shield
 url: https://github.com/Count-I/zmk-config-beedev
-requires: [pro_micro]
+requires: [nice_nano_v2]
 exposes: [i2c_oled]
 features:
   - keys
