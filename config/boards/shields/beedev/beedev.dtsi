@@ -23,9 +23,9 @@
         compatible = "zmk,kscan-gpio-matrix";
 
         diode-direction = "col2row";
-        row-gpios = <&nice_nano_v2 31 (GPIO_PULL_DOWN)>,
-                    <&nice_nano_v2 29 (GPIO_PULL_DOWN)>,
-                    <&nice_nano_v2 2 (GPIO_PULL_DOWN)>,
-                    <&nice_nano_v2 10 (GPIO_PULL_DOWN)>;
+        row-gpios = <&gpio0 31 (GPIO_PULL_DOWN)>,
+                    <&gpio0 29 (GPIO_PULL_DOWN)>,
+                    <&gpio0 2 (GPIO_PULL_DOWN)>,
+                    <&gpio0 10 (GPIO_PULL_DOWN)>;
     };
 };
