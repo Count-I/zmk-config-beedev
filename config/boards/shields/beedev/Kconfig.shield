@@ -1,0 +1,5 @@
+config SHIELD_beedev_LEFT
+    def_bool $(shields_list_contains,beedev_left)
+
+config SHIELD_beedev_RIGHT
+    def_bool $(shields_list_contains,beedev_right)

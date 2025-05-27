@@ -1,0 +1,15 @@
+#include "beedev.dtsi"
+
+&default_transform {
+    col-offset = <7>;
+};
+
+&kscan0 {
+    col-gpios = <&nice_nano_v2 11 GPIO_ACTIVE_HIGH>,
+                <&nice_nano_v2 24 GPIO_ACTIVE_HIGH>,
+                <&nice_nano_v2 22 GPIO_ACTIVE_HIGH>,
+                <&nice_nano_v2 20 GPIO_ACTIVE_HIGH>,
+                <&nice_nano_v2 17 GPIO_ACTIVE_HIGH>,
+                <&nice_nano_v2 8 GPIO_ACTIVE_HIGH>,
+                <&nice_nano_v2 6 GPIO_ACTIVE_HIGH>;
+};
