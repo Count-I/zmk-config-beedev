@@ -1,0 +1,13 @@
+file_format: "1"
+id: beedev
+name: beedev
+type: shield
+url: https://github.com/Count-I/zmk-config-beedev
+requires: [nice_nano_v2]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+siblings:
+  - beedev_left
+  - beedev_right
