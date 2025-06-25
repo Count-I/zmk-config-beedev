@@ -1,5 +1,9 @@
 #include "beedev.dtsi"
 
+&default_transform {
+    col-offset = <7>;
+};
+
 &kscan0 {
     col-gpios = <&gpio0 11 GPIO_ACTIVE_HIGH>,
                 <&gpio0 24 GPIO_ACTIVE_HIGH>,
